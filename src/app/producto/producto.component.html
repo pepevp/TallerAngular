@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Punto Jardín - Cinturón entutorar reforzado</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #5a3c1a;
+    background: #fff;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 28px;
+    color: #a05f0f;
+    gap: 10px;
+  }
+  .logo img {
+    height: 40px;
+  }
+  .search-bar {
+    flex-grow: 1;
+    max-width: 400px;
+    margin: 0 20px;
+    border: 2px solid #fecb00;
+    display: flex;
+    border-radius: 3px;
+  }
+  .search-bar input {
+    border: none;
+    padding: 7px 10px;
+    flex-grow: 1;
+    font-size: 14px;
+  }
+  .search-bar button {
+    background: transparent;
+    border: none;
+    padding: 7px 10px;
+    cursor: pointer;
+    color: #a05f0f;
+    font-size: 18px;
+  }
+  nav {
+    background: #fecb00;
+    padding: 5px 20px;
+    display: flex;
+    gap: 25px;
+    font-weight: 700;
+    color: #a05f0f;
+    font-size: 14px;
+  }
+  nav > div {
+    cursor: pointer;
+    user-select: none;
+  }
+  .user-actions {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    font-size: 14px;
+  }
+  .user-actions span {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  main {
+    max-width: 900px;
+    margin: 20px auto;
+    display: flex;
+    gap: 30px;
+    padding: 0 20px;
+  }
+  .product-image {
+    flex: 1 1 300px;
+  }
+  .product-image img {
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ddd;
+  }
+  .product-info {
+    flex: 2 1 500px;
+  }
+  .product-info h1 {
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+  .price {
+    color: #d9534f;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 8px 0;
+  }
+  .rating {
+    color: #f0ad4e;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .description {
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 1.3;
+  }
+  ul.specs {
+    font-size: 14px;
+    padding-left: 20px;
+  }
+  .options {
+    margin-top: 15px;
+  }
+  .options label {
+    font-weight: 700;
+  }
+  .options button {
+    background: #fecb00;
+    border: none;
+    padding: 5px 10px;
+    margin: 3px;
+    cursor: pointer;
+    font-weight: 700;
+    color: #a05f0f;
+  }
+  .options button.selected {
+    background: #a05f0f;
+    color: #fff;
+  }
+  .add-cart {
+    margin-top: 20px;
+    background: #5a3c1a;
+    border: none;
+    color: #fff;
+    padding: 10px 25px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 3px;
+  }
+  .tabs {
+    margin-top: 40px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    font-size: 14px;
+    color: #7b6b62;
+  }
+  .tabs span {
+    margin-right: 25px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .tabs span.active {
+    border-bottom: 3px solid #5a3c1a;
+    color: #5a3c1a;
+  }
+  .tab-content {
+    margin-top: 10px;
+    line-height: 1.4;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="https://st2.depositphotos.com/12176728/44959/v/450/depositphotos_449592250-stock-illustration-green-garden-logo-designs-concept.jpg" alt="Logo" />
+    PUNTOJARDÍN
+  </div>
+  <div class="search-bar">
+    <input type="text" placeholder="Busque en nuestra tienda" />
+    <button aria-label="Buscar">&#128269;</button>
+  </div>
+  <div class="user-actions">
+    <span><img src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" alt="usuario" width="18"/> Iniciar sesión</span>
+    <span><img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" alt="carrito" width="18"/> Carrito</span>
+  </div>
+</header>
+
+<nav>
+  <div>🏠</div>
+  <div>♥ CULTIVO ▼</div>
+  <div>💧 RIEGO ▼</div>
+  <div>✂ HERRAMIENTAS ▼</div>
+  <div>🌾 VIVE TU JARDÍN ▼</div>
+  <div>♥ TUS MARCAS ▼</div>
+  <div>📰 BLOG</div>
+</nav>
+
+<main>
+  <div class="product-image">
+    <img src="https://okdiario.com/img/2022/04/13/las-3-cosas-fundamentales-en-las-que-pensar-antes-de-elegir-los-muebles-de-jardin-655x368.jpg" alt="Cinturón entutorar reforzado" />
+  </div>
+  <div class="product-info">
+    <h1>{{nombreProducto}}</h1>
+    <div>Referencia 100044</div>
+    <div class="price">{{precio}}€</div>
+    <div>Impuestos incluidos</div>
+    <div class="rating">★★★★☆ Ver la opinión</div>
+    <p class="description">
+      Estos modelos de cinturón para sujeción de árboles <strong>presentan una banda de refuerzo central que le confieren mayores resistencias a la rotura por vandalismo.</strong> Además <strong>están agujereados a lo largo de los mismos para facilitar la fijación</strong> con un par de clavos galvanizados o un tornillo a la estaca de madera.
+    </p>
+    <ul class="specs">
+      <li><strong>Longitud:</strong> 25 m</li>
+      <li><strong>Anchura:</strong> 25 ó 38 mm</li>
+      <li><strong>Número pasadores incluidos:</strong> 35</li>
+    </ul>
+    <div class="options">
+      <label>Anchura (mm)</label><br />
+      <button class="selected">25</button>
+      <button>38</button>
+    </div>
+    <button class="add-cart">Añadir al carrito 🛒</button>
+  </div>
+</main>
+
+<div class="tabs">
+  <span class="active">Descripción</span>
+  <span>Detalles del producto</span>
+  <span>Opiniones</span>
+  <div class="tab-content">
+    <p><strong>Descripción de Cinturón para entutorar reforzado:</strong><br>
+    El viento, la erosión del suelo, el vandalismo y las labores de mantenimiento afectan a árboles jóvenes cada año. Para protegerlos de estas amenazas es recomendable la utilización de un sistema de fijación, tipo cinturón o banda, junto con estacas.</p>
+  </div>
+</div>
+
+</body>
+</html>
