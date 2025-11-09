@@ -1,1 +1,54 @@
 /* You can add global styles to this file, and also import other style files */
+/* src/styles.scss */
+
+// 1. ⚙️ DEFINICIÓN DE VARIABLES DE BOOTSTRAP PERSONALIZADAS
+
+// Colores base de la paleta:
+$blue:    #0044AA; // Ejemplo: Un azul más oscuro para los componentes primarios
+$indigo:  #6610f2;
+$purple:  #6f42c1;
+$pink:    #d63384;
+$red:     #dc3545;
+$orange:  #fd7e14;
+$yellow:  #ffc107;
+$green:   #198754;
+$teal:    #20c997;
+$cyan:    #0dcaf0;
+
+// Mapeo de colores principales: 
+// Sobrescribe el color 'primary' con tu nuevo $blue
+$primary:       $blue;
+$secondary:     #6c757d; // Gris por defecto
+$success:       $green;
+$info:          $cyan;
+$warning:       $yellow;
+$danger:        $red;
+$light:         #f8f9fa;
+$dark:          #212529;
+
+// OTRAS VARIABLES DE PERSONALIZACIÓN
+$border-radius: 0.5rem;   // Aumenta el radio de los bordes en general
+$spacer:        1.25rem;  // Aumenta el espaciado y márgenes base (el valor por defecto es 1rem)
+$font-family-base: 'Roboto', sans-serif; // Cambia la fuente base
+
+// 2. 🧱 IMPORTACIÓN DEL CÓDIGO FUENTE DE BOOTSTRAP
+
+// Esto compila todo Bootstrap utilizando las variables que acabas de definir.
+@import "bootstrap/scss/bootstrap";
+
+// 3. 📝 ESTILOS GLOBALES PROPIOS (Opcional)
+// Aquí puedes añadir cualquier otro estilo global que necesites para tu aplicación.
+body {
+    background-color: #f0f2f5; // Un fondo suave para el cuerpo de la página
+}
+
+/*
+Variables primero: Cualquier variable que definas antes de la línea @import sobrescribirá el valor predeterminado que Bootstrap tiene
+para esa variable.
+
+Importación después: La línea @import "bootstrap/scss/bootstrap"; le dice al compilador SCSS (que está integrado en Angular) que compile 
+todo el framework de Bootstrap, usando los valores de tus variables personalizadas.
+
+Estilos Propios: Cualquier CSS/SCSS que añadas después de la importación sobrescribirá los estilos de Bootstrap si es necesario, pero
+solo a través de reglas CSS.
+*/
