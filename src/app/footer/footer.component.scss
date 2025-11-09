@@ -1,0 +1,39 @@
+/* src/app/components/footer/footer.component.scss */
+
+// 1. ⚙️ DECLARACIÓN DE VARIABLES LOCALES DEL COMPONENTE
+$footer-bg: #0c2742;               // Fondo que yo he cambiado
+$footer-text: #adb5bd;             // Color de texto gris claro
+$footer-link-hover: #ffffff;       // Color de enlace al pasar el ratón (blanco)
+$footer-border-top: #343a40;       // Color del borde superior
+
+.my-custom-footer {
+    // 2. UTILIZACIÓN DE LAS VARIABLES
+    background-color: $footer-bg;
+    color: $footer-text;
+    
+    // Borde superior para separarlo del contenido principal
+    border-top: 1px solid $footer-border-top;
+    
+    // Estilo de los párrafos y texto
+    p {
+        font-size: 0.9rem;
+    }
+    
+    // Estilo de los enlaces
+    a {
+        color: $footer-text;
+        text-decoration: none; // Quita el subrayado
+        
+        &:hover {
+            color: $footer-link-hover; // Color al pasar el ratón
+            text-decoration: underline; // Añade subrayado al pasar el ratón
+        }
+    }
+    
+    // Estilo del Dropdown de Bootstrap que va dentro del Footer
+    .dropdown-menu {
+        // Ejemplo de sobrescritura de estilos de Bootstrap dentro del footer
+        border-radius: 0.5rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+}

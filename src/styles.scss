@@ -52,3 +52,19 @@ todo el framework de Bootstrap, usando los valores de tus variables personalizad
 Estilos Propios: Cualquier CSS/SCSS que añadas después de la importación sobrescribirá los estilos de Bootstrap si es necesario, pero
 solo a través de reglas CSS.
 */
+
+//Para que el footer este siempre en la parte mas baja de la pagina
+html, body {
+    height: 100%; // Asegura que html y body ocupen toda la altura de la ventana
+}
+.todo {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; // Asegura que el contenedor ocupe al menos la altura de la ventana
+}
+// Opcional: Estilo para el contenedor de contenido principal (Main)
+main {
+    flex-grow: 1
+    // La clase flex-grow-1 de Bootstrap ya maneja esto si la usaste en el HTML.
+    // Si no usaras Bootstrap, pondrías: flex-grow: 1;
+}

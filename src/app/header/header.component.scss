@@ -1,0 +1,44 @@
+/* src/app/components/header/header.component.scss */
+
+// 1. ⚙️ DECLARACIÓN DE VARIABLES LOCALES DEL COMPONENTE
+$header-bg-color: #b53f3f;         // Nuevo color de fondo del Header (ej. un azul morado)
+$header-text-color: #ffffff;       // Color principal del texto (blanco)
+$header-hover-color: #ffcc80;      // Color al pasar el ratón (naranja suave)
+$header-active-color: #ffeb3b;     // Color del elemento activo (amarillo brillante)
+$header-brand-weight: 900;         // Peso de la fuente para el logo
+
+.my-custom-header {
+    // 2. UTILIZACIÓN DE LAS VARIABLES EN LAS REGLAS CSS
+    background-color: $header-bg-color; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    
+    // 3. Estilo del Logo/Marca
+    .navbar-brand {
+        font-weight: $header-brand-weight; // Usa la variable de peso de fuente
+        font-size: 1.5rem;
+        color: $header-text-color; // Usa la variable de color de texto
+        
+        &:hover {
+            color: lighten($header-text-color, 10%); // Usamos la función lighten de Sass
+        }
+    }
+    
+    // 4. Estilo de los enlaces de navegación
+    .nav-link {
+        color: $header-text-color; // Color base de los enlaces
+        margin: 0 0.5rem;
+        transition: all 0.3s ease;
+        
+        &:hover {
+            color: $header-hover-color; // Usa la variable de color hover
+        }
+        
+        // Estilo del enlace activo
+        &.active {
+            font-weight: bold;
+            border-bottom: 3px solid $header-active-color; // Usa la variable de color activo
+            padding-bottom: 0.5rem;
+            color: $header-active-color; // Usa la variable de color activo
+        }
+    }
+}
