@@ -11,10 +11,10 @@ const routes: Routes = [
   { path: 'inicio', component: InicioComponent },
 
   // 2. Ruta para Catálogo (usando un parámetro para la categoría)
-  { path: 'productos/:categoria', component: CatalogoComponent },
+  { path: 'catalogo', component: CatalogoComponent },
   
   // 3. Ruta para Detalle de Producto (usando un parámetro para el ID)
-  { path: 'producto/:id', component: DetallesProductoComponent },
+  { path: 'producto', component: DetallesProductoComponent },
 
   // 4. Redirección para la ruta raíz (al abrir el dominio)
   { path: '', redirectTo: '/inicio', pathMatch: 'full' },
